@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  postgres_foton:
+    container_name: postgres_foton_test
+    image: postgres:12.2
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    ports:
+      - "5432:5432"
